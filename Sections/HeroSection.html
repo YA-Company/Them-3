@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUMA Fashion</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'cairo': ['Cairo', 'sans-serif'],
+                    },
+                    colors: {
+                        'luma-bg': '#Bebdb8', /* لون خلفية الهيرو */
+                        'luma-olive': '#A8B58E', /* اللون الزيتوني */
+                        'luma-card': '#D1D5DB',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-white font-cairo text-gray-800">
+
+    <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+
+
+        <div class="relative bg-luma-bg rounded-[40px] overflow-hidden min-h-[450px] px-5">
+
+            <header class="flex justify-between items-center py-4 mb-4">
+                <div class="text-2xl font-bold tracking-widest text-gray-800">LUMA</div>
+                <nav class="hidden md:flex gap-8 text-gray-500 font-semibold text-sm">
+                    <a href="#" class="text-black font-bold">الرئيسية</a>
+                    <a href="#" class="hover:text-black">المنتجات</a>
+                    <a href="#" class="hover:text-black">الأقسام</a>
+                </nav>
+                <div class="flex gap-4 text-gray-600">
+                    <button><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                        </svg></button>
+                    <button><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                        </svg></button>
+                    <button><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z">
+                            </path>
+                        </svg></button>
+                    <button><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z">
+                            </path>
+                        </svg></button>
+                </div>
+
+
+            </header>
+            <div class="flex flex-col md:flex-row items-center">
+
+
+                <div class="w-full md:w-1/2 p-10 md:pr-20 z-10 text-right">
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-4">
+                        أناقة تعبّر عنك <br> في كل تفصيلة
+                    </h1>
+                    <p class="text-gray-700 mb-8 leading-relaxed max-w-md">
+                        اكتشف تشكيلة مختارة بعناية من الأزياء العصرية التي تجمع بين الجودة، الراحة، والأسلوب الحديث
+                        لتناسب
+                        ذوقك في كل وقت.
+                    </p>
+
+                </div>
+                <div class="w-full md:w-1/2 h-full relative flex justify-center items-end pt-10">
+                    <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=1000&auto=format&fit=crop"
+                        alt="Fashion Models"
+                        class="object-cover h-[400px] w-auto mix-blend-multiply opacity-90 drop-shadow-2xl grayscale-[30%]">
+                </div>
+
+                <!-- المستطيل المائل المعدل -->
+                <div class="absolute -bottom-40 -left-7 w-[68%] h-64 bg-white 
+                    skew-x-[44deg] rotate-[-0deg] 
+                    rounded-xl hidden md:block z-0 shadow-lg">
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="flex justify-start relative -mt-16 md:-mt-20 ml-10 mb-10 z-20 px-10">
+            <button
+                class="bg-gradient-to-r from-[#C8CEB3] to-[#A8B58E] text-gray-900 font-bold py-4 px-12 rounded-xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-1 text-lg">
+                ابدأ التسوق
+            </button>
+        </div>
+
+        <!-- حاوية الكروت الثلاثة -->
+        <div class="relative mt-8">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-2">
+                <div class="md:col-span-6 relative">
+                    <!-- المربع المائل -->
+                    <div class="bg-[#D4DBC6] rounded-[30px] p-8 flex items-center justify-center text-center relative overflow-hidden h-full"
+                        style="clip-path: polygon(30% 0%, 100% 0, 100% 100%, 9% 100%)">
+                        <div class="absolute top-0 right-0 w-full h-full">
+                            <div
+                                class="absolute top-0 left-0 w-32 h-full bg-white transform -skew-x-16 origin-top-right">
+                            </div>
+                        </div>
+
+                        <div class="relative z-10">
+                            <p class="text-gray-800 text-lg font-medium leading-relaxed">
+                                اكتشف تشكيلة مختارة بعناية من الأزياء العصرية <br>
+                                التي تجمع بين الجودة، الراحة، والأسلوب الحديث <br>
+                                لتناسب ذوقك في كل وقت.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- الكروت الثلاثة داخل المستطيل المائل -->
+                <div class="md:col-span-6 relative -mt-28 md:-mt-20 mr-8 md:mr-16">
+                    <div class="grid grid-cols-3 gap-4 relative z-10">
+                        <!-- كارت النساء -->
+                        <div
+                            class="relative group cursor-pointer transform transition-transform duration-300 hover:-translate-y-2">
+                            <div class="bg-[#BFAEA9] h-72 rounded-[25px] overflow-hidden relative shadow-lg">
+                                <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=300&q=80"
+                                    class="w-full h-full object-cover opacity-90 group-hover:scale-110 transition duration-500"
+                                    alt="نساء">
+                                <div
+                                    class="absolute top-4 left-4 bg-white w-10 h-10 rounded-full flex items-center justify-center shadow-sm">
+                                    <svg class="w-4 h-4 text-gray-600 rotate-180" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                    </svg>
+                                </div>
+                                <div
+                                    class="absolute bottom-0 w-full p-4 bg-gradient-to-t from-black/60 to-transparent text-center">
+                                    <span class="text-white text-xl font-bold">نساء</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- كارت الرجال -->
+                        <div
+                            class="relative group cursor-pointer transform transition-transform duration-300 hover:-translate-y-2">
+                            <div class="bg-[#8C8C8C] h-72 rounded-[25px] overflow-hidden relative shadow-lg">
+                                <img src="https://images.unsplash.com/photo-1617137984095-74e4e5e3613f?auto=format&fit=crop&w=300&q=80"
+                                    class="w-full h-full object-cover opacity-90 group-hover:scale-110 transition duration-500"
+                                    alt="رجال">
+                                <div
+                                    class="absolute top-4 left-4 bg-white w-10 h-10 rounded-full flex items-center justify-center shadow-sm">
+                                    <svg class="w-4 h-4 text-gray-600 rotate-180" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                    </svg>
+                                </div>
+                                <div
+                                    class="absolute bottom-0 w-full p-4 bg-gradient-to-t from-black/60 to-transparent text-center">
+                                    <span class="text-white text-xl font-bold">رجال</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="relative group cursor-pointer transform transition-transform duration-300 hover:-translate-y-2">
+                            <div class="bg-[#A68F81] h-72 rounded-[25px] overflow-hidden relative shadow-lg">
+                                <img src="https://images.unsplash.com/photo-1519457431-44ccd64a579b?auto=format&fit=crop&w=300&q=80"
+                                    class="w-full h-full object-cover opacity-90 group-hover:scale-110 transition duration-500"
+                                    alt="أطفال">
+                                <div
+                                    class="absolute top-4 left-4 bg-white w-10 h-10 rounded-full flex items-center justify-center shadow-sm">
+                                    <svg class="w-4 h-4 text-gray-600 rotate-180" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                    </svg>
+                                </div>
+                                <div
+                                    class="absolute bottom-0 w-full p-4 bg-gradient-to-t from-black/60 to-transparent text-center">
+                                    <span class="text-white text-xl font-bold">أطفال</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Stats Section -->
+    <section class="bg-[#FFF9E6] rounded-2xl px-10 py-14 w-[100%] mt-20 w-full">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+
+            <div class="flex flex-col items-center gap-2">
+                <div class="text-3xl font-bold text-gray-900">3,820</div>
+                <div class="flex items-center gap-2 text-gray-700">
+                    <svg class="w-7 h-7 text-[#C9A24D]" fill="none" stroke="currentColor" stroke-width="2"
+                        viewBox="0 0 24 24">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                        <circle cx="9" cy="7" r="4" />
+                        <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                    </svg>
+                    <span class="text-xl font-bold text-gray-900">عدد العملاء</span>
+                </div>
+            </div>
+            <div class="flex flex-col items-center gap-2">
+                <div class="text-3xl font-bold text-gray-900">5 / 4.7</div>
+                <div class="flex items-center gap-2 text-gray-700">
+                    <!-- star -->
+                    <svg class="w-7 h-7 text-[#C9A24D]" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2l2.9 6.6 7.1.6-5.3 4.6 1.6 6.9L12 17.8 5.7 20.7l1.6-6.9L2 9.2l7.1-.6L12 2z" />
+                    </svg>
+                    <span class="text-xl font-bold text-gray-900">تقييم المتجر</span>
+                </div>
+            </div>
+
+
+            <div class="flex flex-col items-center gap-2">
+                <div class="text-3xl font-bold text-gray-900">6,540</div>
+                <div class="flex items-center gap-2 text-gray-700">
+                    <!-- icon -->
+                    <svg class="w-5 h-5 text-[#C9A24D]" fill="none" stroke="currentColor" stroke-width="2"
+                        viewBox="0 0 24 24">
+                        <path
+                            d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4a2 2 0 0 0 1-1.73Z" />
+                    </svg>
+                    <span class="text-xl font-bold text-gray-900">عدد الطلبات</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+
+</html>

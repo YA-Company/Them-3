@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUMA Fashion</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'cairo': ['Cairo', 'sans-serif'],
+                    },
+                    colors: {
+                        'luma-bg': '#Bebdb8', /* لون خلفية الهيرو */
+                        'luma-olive': '#A8B58E', /* اللون الزيتوني */
+                        'luma-card': '#D1D5DB',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-white font-cairo text-gray-800">
+
+<div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+    <div class="text-center mb-10">
+        <h2 class="text-4xl font-bold text-gray-900 relative inline-block">
+            الأكـثـر مبيـعـاً
+        </h2>
+    </div>
+
+    <div id="products-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+
+    </div>
+</div>
+</body>
+
+</html>

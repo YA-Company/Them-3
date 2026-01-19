@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>قصتنا - LUMA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { 'cairo': ['Cairo', 'sans-serif'] },
+                    colors: {
+                        'luma-beige': '#FDFBE2', /* لون الخلفية الكريمي */
+                        'luma-tan': '#BD9673',   /* لون الزر */
+                        'luma-brand-bg': '#E9F0D8' /* لون شريط الماركات */
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-luma-brand-bg font-cairo">
+
+    <div class="max-w-7xl mx-auto px-6 py-16 md:py-24">
+        
+        <div class="flex flex-col md:flex-row items-center gap-12 md:gap-20">
+            
+            
+            <div class="w-full md:w-1/2 text-right">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-8 tracking-tight">
+                    قصتنا تبدأ من التفاصيل
+                </h2>
+                
+                <p class="text-gray-700 text-xl md:text-2xl leading-[1.8] mb-10 font-medium">
+                    في LUMA نؤمن أن الأناقة ليست مجرد مظهر، بل إحساس. نصمم قطعنا بعناية لتجمع بين البساطة، الجودة، والراحة، لترافقك في كل لحظة وتعبر عن ذوقك بأسلوبك الخاص.
+                </p>
+                
+                <button class="bg-luma-tan hover:bg-[#a68262] text-white font-bold py-4 px-14 rounded-xl text-lg transition-colors shadow-md">
+                    تسوق الآن
+                </button>
+            </div>
+            
+            <div class="w-full md:w-1/2">
+                <div class="relative rounded-[60px] overflow-hidden shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1534030347209-467a5b0ad3e6?q=80&w=1000&auto=format&fit=crop" 
+                         alt="LUMA Story" 
+                         class="w-full h-full object-cover aspect-square">
+                    
+                    <div class="absolute bottom-6 left-6 text-white/50 text-2xl">✦</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-luma-brand-bg py-6 mt-10 overflow-hidden border-t border-b border-gray-200/30">
+        <div class="flex justify-around items-center gap-8 whitespace-nowrap opacity-80">
+            <span class="text-3xl md:text-4xl font-serif font-bold tracking-[0.2em] text-black">ZARA</span>
+            <span class="text-3xl md:text-4xl font-serif font-bold tracking-[0.2em] text-black">G U C C I</span>
+            <span class="text-3xl md:text-4xl font-serif font-bold tracking-[0.2em] text-black">DIOR</span>
+            
+            <span class="text-3xl md:text-4xl font-serif font-bold tracking-[0.2em] text-black hidden sm:inline">ZARA</span>
+            <span class="text-3xl md:text-4xl font-serif font-bold tracking-[0.2em] text-black hidden sm:inline">G U C C I</span>
+            <span class="text-3xl md:text-4xl font-serif font-bold tracking-[0.2em] text-black hidden sm:inline">DIOR</span>
+            
+            <span class="text-3xl md:text-4xl font-serif font-bold tracking-[0.2em] text-black hidden lg:inline">ZARA</span>
+            <span class="text-3xl md:text-4xl font-serif font-bold tracking-[0.2em] text-black hidden lg:inline">G U C C I</span>
+            <span class="text-3xl md:text-4xl font-serif font-bold tracking-[0.2em] text-black hidden lg:inline">DIOR</span>
+        </div>
+    </div>
+
+</body>
+</html>
